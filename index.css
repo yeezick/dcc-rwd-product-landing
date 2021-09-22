@@ -1,0 +1,118 @@
+/* 
+needs:
+- sticky navbar
+- flexbox
+- 1 media query
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0; 
+  padding: 0;
+  background-color: #FFF8E7;
+}
+
+#header { 
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: #003b59;
+  color: #FFF8E7;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh; 
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+}
+.header-left {
+  display: flex;
+}
+#header-img {
+  /* width: 100px; */
+  align-self: center;
+  border-radius: 50%;
+  height: 8.5vh;
+  margin-left: 2vw;
+}
+#nav-bar {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-right: 1vw;
+  width: 30vw;
+}
+#nav-bar a {
+  color: #FFF8E7;
+  text-decoration: none;
+}
+
+main {
+  margin: 13vh 10vw 0vh;
+  height: 200vh;
+  text-align: center;
+}
+h2 {
+  text-decoration: underline;
+}
+
+
+#about img {
+  width: 80vw;
+  border-radius: 8px;
+}
+
+.product-option {
+  background-color: orange;
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+.title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0 2rem;
+}
+button {
+  border: none; 
+  border-radius: 5px;
+  margin: 1rem 0 .5rem; 
+  padding: 0.5rem 2rem;
+}
+
+#contact {
+  border-radius: 5px;
+ margin-bottom: 4rem ; 
+ padding: 4rem 2rem;
+ background-color: lightgray;
+} 
+#contact form {
+  display: flex; 
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+form label {
+font-weight: 600;
+font-size: 1.2rem;
+margin-bottom: 2rem;
+text-decoration: underline;
+}
+
+footer {
+  border-top: 1px solid black;
+  display: block;
+}
+
+footer a {
+  color: #003b59;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) {
+  .product-option, #contact {
+    max-width: 50vw;
+    margin: 1rem auto;
+  }
+
+}
